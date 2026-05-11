@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://thumbs.dreamstime.com/b/school-building-vector-illustration-icon-symbol-logo-template-342604742.jpg" alt="school logo">
+            </div>
+            <nav style="display: flex; flex-direction: column; gap: 30px;">
+                <a href="dashboard.html" style="color: #1d1717; text-decoration: none;">dashboard</a>
+                <a href="notebooks.html" style="color: #1d1717; text-decoration: none;">virtual notebooks</a>
+                <a href="task.html" style="color: #1d1717; text-decoration: none;">tasks</a>
+                <a href="profile.html" style="color: #1d1717; text-decoration: none;">profile</a>
+                <a href="index.html" style="color: #1d1717; text-decoration: none;">logout</a>
+            </nav>
+        </aside>
+
+        <main style="flex: 1; display: flex; flex-direction: column; overflow-y: auto;">
+            <header style="background: #fbdfdf; padding: 30px 40px; border: 1px solid #e8b5b5;">
+                <h1>PROFILE</h1>
+                <p>student information</p>
+            </header>
+
+            <section class="profile-container">
+                <div class="upload-card">
+                    <div class="avatar-section">
+                        <img id="avatarImg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="Student Avatar" class="avatar">
+                        <div class="file-upload">
+                            <label for="file-input" style="cursor: pointer; background-color: #f0f0f0; padding: 8px 16px; border-radius: 5px; display: inline-block;">Choose File</label>
+                            <input type="file" id="file-input" accept="image/*" style="display: none;">
+                            <span class="no-file">No file chosen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h2>student information</h2>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label style="font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase;">Student ID</label>
+                        <p style="font-size: 16px; color: #2d2d2d; font-weight: 500;">SN129374</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label style="font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase;">Contact Number</label>
+                        <p style="font-size: 16px; color: #2d2d2d; font-weight: 500;">+63820412840</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label style="font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase;">Email Address</label>
+                        <p style="font-size: 16px; color: #2d2d2d; font-weight: 500;">madrelejos.mp@obmontessori.edu.ph</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label style="font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase;">Gender</label>
+                        <p style="font-size: 16px; color: #2d2d2d; font-weight: 500;">Female</p>
+                    </div>
+
+                    <button class="change-password">Change Password</button>
+                </div>
+            </section>
+        </main>
+
+    </div>
+        <footer class="footer">
+            <p>MJ Madrelejos | 9-Topaz ©2026</p>
+        </footer>
+    <script src="proj.js"></script>
+</body>
+</html>

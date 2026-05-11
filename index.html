@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+    <div class="boxbox" style="width: 180px;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLg__6S81P_1_yXgXXlgtWnbK6PmFKb5eVPA&s" 
+            style="width: 35px; height: 35px;">
+            <h2 style="margin: 0;">login</h2>
+        </div>
+    
+        <h3 style="text-align: center; margin-bottom: 2px;">username</h3>
+        <div style="display: flex; justify-content: center;">
+            <input type="text" id="username" placeholder="enter username" class="textbox">
+        </div>
+
+        <h3 style="text-align: center; margin-bottom: 2px;">password</h3>
+        <div style="display: flex; justify-content: center;">
+            <input type="password" id="password" placeholder="enter password" class="textbox">
+        </div><br>
+
+        <input type="checkbox" id="log" onclick="instructions()"> stay logged in?<br>
+        <div id="show"></div><br>
+
+        <div style="display: flex; justify-content: center; gap: 10px;">
+            <input type="button" onclick="password()" value="login" class="buttons" id="btn">
+            <input type="button" value="cancel" class="buttons2">
+        </div>
+
+        <div id="display" style="color: red; text-align: center;"></div>
+        <hr>
+        <a href="https://www.google.com"><h5 style="text-align: center; margin-top: 2px;">forgot password?</h5></a>
+    </div>
+
+<script src="proj.js"></script>
+</body>
+</html>
